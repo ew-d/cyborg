@@ -1,0 +1,41 @@
+.beneficios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .beneficios-col {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .item ul {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 768px) {
+    .beneficios-grid {
+      flex-direction: column;
+    }
+  
+    .beneficios-col {
+      flex: 1 1 100%;
+    }
+  
+    .item ul {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
