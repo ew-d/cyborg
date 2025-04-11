@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/animate.css"
+    <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <!--
 
@@ -44,44 +45,66 @@ https://templatemo.com/tm-579-cyborg-gaming
   </div>
   <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Search End ***** -->
-                    <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Escribe algo" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
-                      </form>
-                    </div>
-                    <!-- ***** Search End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.html" class="active">Inicio</a></li>
-                        <li><a href="browse.html">Nosotros</a></li>
-                        <li><a href="details.html">Beneficios</a></li>
-                        <li><a href="streams.html">Tienda</a></li>
-                        <li><a href="eventos.html">Eventos</a></li>
-                        <li><a href="profile.html">Iniciar Sesion<img src="assets/images/profile-header.jpg" alt=""></a></li>                    </ul>   
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
+<!-- ***** Header Area Start ***** -->
+<header class="header-area">
+  <nav class="main-nav fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="">
+      </a>
+
+      <!-- Buscador -->
+      <div class="search-input">
+        <form id="search" action="#">
+          <input type="text" placeholder="Escribe algo" id='searchText' name="searchKeyword" />
+          <i class="fa fa-search"></i>
+        </form>
+      </div>
+
+      <!-- Menú -->
+      <ul class="nav">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="browse.html">Nosotros</a></li>
+        <li><a href="details.html">Beneficios</a></li>
+        <li><a href="streams.html">Tienda</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="profile.html">Iniciar Sesion<img src="assets/images/profile-header.jpg" alt=""></a></li>
+      </ul>
+
+      <!-- Botón de menú móvil -->
+      <a class='menu-trigger'>
+        <span>Menu</span>
+      </a>
     </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+  </nav>
+  <style>
+    .main-nav {
+      background-color: #1e1e1e !important;
+      opacity: 1 !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+  
+    .header-area {
+      background-color: #1e1e1e !important;
+    }
+  
+    .main-nav::before,
+    .main-nav::after,
+    .header-area::before,
+    .header-area::after {
+      background: none !important;
+      background-color: transparent !important;
+      opacity: 1 !important;
+    }
+  </style>
+  
+</header>
+
+<!-- ***** Header Area End ***** -->
+
 
   <div class="container">
     <div class="row">
